@@ -1,195 +1,213 @@
 /* Basic reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  }
-  
-  /* Navbar styling */
-  .navbar {
-    background-color: #fff;
-    color: #000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 17.1px;
-    border-bottom: 1px solid #ccc;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-  }
-  
+/* Navbar styling */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  z-index: 1000;
+}
 
-  
-  .navbar a:hover {
-    color: #6a6e6e;
-  }
-  
-  .logo {
-    font-size: 19px;
-    font-weight: bold;
-    margin-right: 20px;
-    text-decoration: none;
-    color: #000;
-  }
-  a.fa-home, a.fa-info, a.fa-users, a.fa- suitcase, a.fa-dollar, a.fa-phone, a.fa-suitcase {
-    color: #000;
-    text-decoration: none;
-    font-size: 20px;
-    margin-right: 20px;
-    cursor: pointer;
+.navbar .logo {
+  float: left;
+  display: block;
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+}
 
-  }
-  
+.nav-links {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
 
+.nav-links a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  transition: background-color 0.3s;
+}
 
+.nav-links a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
-  /* Header styling */
-  header {
-    background: url('https://assets.hongkiat.com/uploads/apple-macos-desktop-wallpapers-2017/macbook-air.jpg') no-repeat center center;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    color: white;
-   word-wrap: normal;
-   line-height: 1.2;
+/* Header styling */
+header {
+  background: url('https://assets.hongkiat.com/uploads/apple-macos-desktop-wallpapers-2017/macbook-air.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: white;
+  line-height: 1.2;
+}
 
-  }
-  
-  .header-content {
-    max-width: 600px;
-    text-align: center;
-    margin: 0 auto;
+.header-content {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
 
-  }
-  
-  .header-title {
-    font-size: 48px;
-  
-   text-align: left;
-   word-wrap: normal;
-   line-height: 1.2;
+.header-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-align: left;
+  word-wrap: normal;
+  line-height: 1.2;
+}
 
-  }
-  
-  .header-subtitle {
-    font-size: 20px;
-    margin-bottom: 40px;
-    color: #333;
-  }
-  
-  .header-button {
-    background-color: rgba(0, 0, 0, 0.297);
-    color: white;
-    padding: 14px 28px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 12px;
-    margin-right: 10px;
-    transition: 0.3s;
-    text-align: left;
-  }
-  
-  .header-button:hover {
-    background-color:#6a6e6e;
-  }
+.header-subtitle {
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: #333;
+}
 
-  /* Position the social-icons div in the bottom left corner */
+.header-button {
+  background-color: rgba(0, 0, 0, 0.297);
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 12px;
+  margin-right: 10px;
+  transition: 0.3s;
+  text-align: left;
+}
+
+.header-button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Position the social-icons div in the bottom left corner */
 .social-icons {
-position: absolute;
+  position: absolute;
   bottom: 0;
   left: 0;
   display: flex;
   flex-direction: row;
   padding: 10px;
- /* Optional: Add a semi-transparent background */
-  border-top-right-radius: 10px; /* Optional: Add rounded corners */
 }
 
-
-
-/* Style the individual icons */
 .social-icons i {
-  color: white;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  cursor: pointer;
   padding: 10px;
-  font-size: 24px;
-  transition: color 0.3s;
+  border-radius: 10px;
+  background-color: #515555;
+  border: 1px solid #f1f9f9;
+  margin-right: 10px;
+  transition: color 0.3s ease;
 }
 
 .social-icons i:hover {
-  color: #6a6e6e; /* Change this to the desired hover color */
+  color: #191a1a; /* Change this to the desired hover color */
+  background-color: #f1f9f9;
 }
 
-  /* About section */
+/* About section */
+.about {
+  background-color: #f5f5f5;
+  padding: 80px 20px;
+  text-align: center;
+}
 
-  .about {
-    background-color: #f5f5f5;
-    padding: 80px 0;
-    text-align: center;
-  }
-  
-  .about-text {
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.5;
-    font-size: 20px;
-  
-  }
-  
-  /* Section styling */
-  .section {
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .section-title {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .section-subtitle {
-    font-size: 1.2em;
-    margin-bottom: 40px;
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .col {
-    flex: 1 1 calc(25% - 20px); /* Adjust this value to control the number of columns */
-    max-width: calc(25% - 20px); /* Adjust this value to control the number of columns */
-    box-sizing: border-box;
-    padding: 20px;
-  }
-  
-  .icon-large {
-    font-size: 48px; /* Adjust the size of the icons */
-    color: #333; /* Change the color if needed */
-    margin-bottom: 10px;
-  }
-  
-  .col h3 {
-    font-size: 1.5em;
-    margin: 10px 0;
-  }
-  
-  .col p {
-    font-size: 1em;
-    color: #666;
-  }
-  
-  
-  /* Team section */
- 
-Copy code
+.about-text {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+/* Section styling */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.col {
+  flex: 1 1 calc(25% - 20px); /* Adjust this value to control the number of columns */
+  max-width: calc(25% - 20px); /* Adjust this value to control the number of columns */
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.col .icon-large {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.col .icon-small {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.col .icon-medium {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.col .icon-large,
+.col .icon-small,
+.col .icon-medium {
+  color: #333;
+}
+
+.col .icon-large:hover,
+.col .icon-small:hover,
+.col .icon-medium:hover {
+  color: #000;
+}
+
+.col h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.col p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Team section */
 .section {
   padding: 60px 20px;
   text-align: center;
@@ -272,14 +290,18 @@ Copy code
   align-self: flex-start; /* Align the button to the start */
 }
 
-
 .contact-button:hover {
-  background-color: #171414;
+  background: #beb9b9;
+  color: rgb(14, 14, 14);
 }
 
 .contact-button i {
   margin-right: 5px;
 }
+
+
+
+
 
 @media (max-width: 992px) {
   .col {
@@ -294,369 +316,373 @@ Copy code
     max-width: 100%;
   }
 }
-  
-  /* Promo section */
-  .section.promo {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: #333;
-  }
-  
+
+/* Promo section */
+.section.promo {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #333;
+}
+
+.promo-item {
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  color: #fff;
+}
+
+.promo-number {
+  font-size: 2.5em;
+  color: #f5f5f5;
+  margin-bottom: 10px;
+}
+
+.promo-text {
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
   .promo-item {
-    display: inline-block;
-    margin: 20px;
-    padding: 20px;
-    color: #fff;
+    width: 180px; /* Adjust the width for smaller screens */
+    margin: 10px;
   }
-  
-  .promo-number {
-    font-size: 2.5em;
-    color: #f5f5f5;
-    margin-bottom: 10px;
-  }
-  
-  .promo-text {
-    font-size: 1.2em;
-    color: #ccc;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 992px) {
-    .promo-item {
-      width: 180px; /* Adjust the width for smaller screens */
-      height: auto; /* Remove fixed height */
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .promo-item {
-      width: 100%; /* Make each promo item take full width on very small screens */
-      margin: 10px 0;
-    }
-  }
-  
-  
-  /* Work section */
-  .section.work {
-    padding: 60px 20px;
+}
 
-  }
-  
-  .work-img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    text-align: center;
- 
-  }
-  .grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 20px;
-  }
-  
-  
-  .work-title {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
-  .work-description {
-    font-size: 1em;
-    color: #666;
-  }
+/* Work section */
+.section.work {
+  padding: 60px 20px;
+}
 
-  
-  /* Skills section */
+.work-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
-  
-  .section.skills {
-    background-color: #afafaf;
-    color: #fff;
-    padding: 60px 20px;
-    text-align: left;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
 
- 
-  }
+.work-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
 
-  
-  .section.skills .col {
-    flex: 1 1 45%;
-    margin-bottom: 20px;
-    padding: 20px;
-  }
-  
-  .section.skills h3 {
-    margin-bottom: 20px;
-    color: #333;
+.work-description {
+  font-size: 1em;
+  color: #666;
+}
 
-   
+/* Skills section */
+.section.skills {
+  background-color: #afafaf;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: left;
+}
 
-  }
-  
-  .section.skills p {
-    margin-bottom: 10px;
-    color: #555;
-    font-size: 18px;
-   
-  }
-  
-  .skill {
-    margin-bottom: 20px; /* Increased margin */
+.section.skills .col {
+  flex: 1 1 45%;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.section.skills h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section.skills p {
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 18px;
+}
+
+.skill {
+  margin-bottom: 20px; /* Increased margin */
   font-size: 18px;
   display: flex;
   align-items: center;
   color: #333;
-   
-  }
-  
-  .skill-icon {
-    margin-right: 10px;
-    color: #555;
-  }
-  
-  .skill-bar {
-    width: 150%;
-    background-color: #737171;
-    height: 30px;
-    border-radius: 25px;
-    overflow: hidden;
-    margin-right: 10px;
+}
 
-  }
-  
-  .skill-level { display: inline-block;
-    height: 30px;
-    line-height: 30px;
-    background-color: #505050;
-    color: #fff;
-    text-align: right;
-    padding-right: 10px;
-    border-radius: 25px;
-    width: 90%; /
-  }
+.skill-icon {
+  margin-right: 10px;
+  color: #131212;
+}
 
-  
-  .skill:nth-child(2) .skill-level {
-    width: 85%;
-  }
-  
-  .skill:nth-child(3) .skill-level {
-    width: 75%;
-  }
-  
-  /* Adjustments for spacing */
-  .section.skills .col:nth-child(1) {
-    margin-right: 5%;
-  }
-  
-  @media (max-width: 768px) {
-    .section.skills .row {
-      flex-direction: column;
-    }
-    
-    .section.skills .col {
-      flex: 1 1 100%;
-      margin-right: 0;
-    }
-  }
-  
-  
-  /* Pricing section */
-  .pricing-list {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .pricing-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 16px;
-  }
-  .pricing-headerp{
-    background-color: #9f0e0e;
-    color: white;
-    text-align: center;
-    padding: 16px;
+.skill-bar {
+  flex: 1; /* Allow skill bar to grow */
+  background-color: #737171;
+  height: 30px;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-right: 10px;
+}
 
+.skill-level {
+  height: 30px;
+  line-height: 30px;
+  background-color: #505050;
+  color: #fff;
+  text-align: right;
+  padding-right: 10px;
+  border-radius: 25px;
+}
 
-  }
-  
-  .pricing-item {
-    padding: 16px;
-    text-align: center;
-  }
-  
-  .price {
-    font-size: 40px;
-  }
-  
-  .price-duration {
-    font-size: 20px;
-  }
-  
-  .pricing-footer {
-    text-align: center;
-  }
-  
-  .pricing-button {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .pricing-button:hover {
-    background-color: #555;
-  }
-  
-  /* Contact section */
-.section.contact {
-    background-color: #f4f4f4;
-    padding: 60px 20px;
-    color: #333;
-  }
-  
-  .section.contact .section-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .section.contact .section-subtitle {
-    font-size: 16px;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-  
-  .section.contact .row {
-    display: flex;
+.skill:nth-child(2) .skill-level {
+  width: 85%;
+}
 
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  
-  .section.contact .col-left {
-    flex: 1 1 40%;
-    margin-bottom: 20px;
+.skill:nth-child(3) .skill-level {
+  width: 75%;
+}
 
-  }
-  
-  .section.contact .col-right {
-    flex: 1 1 55%;
-    margin-bottom: 20px;
+/* Adjustments for spacing */
+.section.skills .col:nth-child(1) {
+  margin-right: 5%;
+}
 
-   
-  }
-  
-  .section.contact p {
-    
-    font-size: 26px;
-    margin-bottom: 10px;
-    line-height: 1.5;
-    margin-right: 40px;
-
-  }
-  
-  .icon-large {
-    font-size: 24px;
-    font-weight: 900;
-    color: #000;
-    margin-right: 15px;
-    vertical-align: middle;
-
-   
-  }
-  
-  .input-field {
-    width: 380%;
-    padding: 25px;
-    margin: 16px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-  
-  .form-button {
-    background-color: #454845;
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-align: center;
-    font-size: 16px;
-    display: inline-flex;
-    align-items: center;
-  }
-  
-  .form-button i {
-    margin-right: 10px;
-  }
-  
-  .form-button:hover {
-    background-color: #757775;
-  }
-  
 @media (max-width: 768px) {
-  .section.contact .row {
+  .section.skills .row {
     flex-direction: column;
   }
   
-  .section.contact .col-left,
-  .section.contact .col-right {
+  .section.skills .col {
     flex: 1 1 100%;
-    padding: 0;
+    margin-right: 0;
+  }
+}
+
+/* Pricing section */
+.pricing-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pricing-header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 16px;
+}
+
+.pricing-headerp {
+  background-color: #9f0e0e;
+  color: white;
+  text-align: center;
+  padding: 16px;
+}
+
+.pricing-item {
+  padding: 16px;
+  text-align: center;
+}
+
+.price {
+  font-size: 30px;
+}
+
+.price-duration {
+  font-size: 20px;
+}
+
+.pricing-footer {
+  text-align: center;
+  
+}
+
+.pricing-button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.pricing-button:hover {
+  background-color: #b0aeae;
+  color: #000;
+}
+
+/* Contact section */
+
+.section.contact {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+.section.contact .section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 0 20px;
+
+}
+
+.section.contact .section-subtitle {
+  font-size: 16px;
+  margin-bottom: 40px;
+  text-align:start;
+}
+
+.section.contact .row {
+  display: flex;
+  flex-direction: column ; /* Stack items vertically */
+  align-items: start; /* Align text to the left */
+  width: 100%; /* Ensure full width on all screens */
+}
+
+.section.contact .col {
+display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 1 45%;
+  width: 80%; /* Set width for larger screens */
+  max-width: 800px; /* Ma x width for the form */
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+
+.section.contact p {
+  font-size: 26px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.icon-large {
+  font-size: 24px;
+  font-weight: 900;
+  color: #000;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.input-field {
+  width: 100%; /* Adjust width to fit container */
+  padding: 15px;
+  margin: 16px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-button {
+  background-color: #454845;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.form-button:hover {
+  background-color: #b0aeae;
+  color: #000;
+}
+.form-button i {
+  margin-right: 10px;
+}
+
+
+
+@media (min-width: 768px) {
+  .section.contact .row {
+    flex-direction: row; /* Arrange items in a row on large screens */
+    justify-content: flex-start; /* Align text to the left */
+  }
+
+  .section.contact .col {
+    margin-left: auto; /* Align the form to the center */
+    margin-right: auto;
+    align-items: center; /* Center align form elements */
   }
 }
 
 
-  
-  /* Footer styling */
-  .to-top-button {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  .map {
-    width: 100%;
-    height: 400px;
-  }
+
+/* Footer styling */
+.to-top-button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+
+/* Icon Styles */
+.icon {
+  display: none;
+  float: right;
+  padding: 14px 16px;
+  cursor: pointer;
+  color: whitesmoke;
+  font-size: 20px;
+  background-color: #454845;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  background-color: #f7f6f6;
+  color: #000;
+}
+
+.icon i {
+  font-size: 20px;
+}
 
 
 
-  .navbar a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  .navbar .icon {
+@media screen and (max-width: 600px) {
+  .nav-links {
     display: none;
+    width: 100%;
+    flex-direction: column;
   }
 
-
-
-
-
-  .nav-link {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+  .nav-links a {
+    text-align: left;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
   }
+
+  .icon {
+    display: block;
+  }
+}
+
+/* Responsive Navbar When Menu is Toggled */
+.nav-links.show {
+  display: flex;
+}
+
 /* To-top button styling */
 .to-top-button {
   display: block;
@@ -665,7 +691,6 @@ Copy code
   text-decoration: none;
   font-size: 18px;
   transition: color 0.3s;
-
 }
 
 .to-top-button:hover {
@@ -674,50 +699,41 @@ Copy code
 
 .to-top-button i {
   margin-right: 8px;
-
 }
 
-/* Social icons styling for footer */
+/* Basic footer styling */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
 
+.footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  /* Basic footer styling */
-  .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 40px 20px;
-    text-align: center;
+.footer .footer-text {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
 
+.footer .to-top-button {
+  display: block;
+  margin: 0 auto 20px;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
 
-  }
-  
-  
-  .footer .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .footer .footer-text {
-    font-size: 14px;
-    margin-bottom: 20px;
-  }
-  
-  .footer .to-top-button {
-    display: block;
-    margin: 0 auto 20px;
-    font-size: 18px;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .footer .to-top-button:hover {
-    text-decoration: underline;
-  }
-  
-  
-  .footer .copyright {
-    font-size: 14px;
-    color: #ccc;
-    margin-top: 20px;
-  }
+.footer .to-top-button:hover {
+  text-decoration: underline;
+}
 
+.footer .copyright {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 20px;
+}
